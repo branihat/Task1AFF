@@ -26,6 +26,123 @@ a,
   transition: all 300ms ease;
 }
 
+.section__text__p2::before { 
+  content: "Frontend Developer"; 
+  animation: animate infinite 5s; 
+  padding-left: 10px; 
+} 
+
+@keyframes animate {
+  0% {
+    content: "Frontend Developer";
+  }
+  5% {
+    content: "Frontend Develope";
+  }
+  10% {
+    content: "Frontend Develo";
+  }
+  15% {
+    content: "Frontend Deve";
+  }
+  20% {
+    content: "Frontend Dev";
+  }
+  25% {
+    content: "Frontend ";
+  }
+  30% {
+    content: "Fronte";
+  }
+  35% {
+    content: "Fron";
+  }
+  40% {
+    content: "Fr";
+  }
+  45% {
+    content: " ";
+  }
+  50% {
+    content: "Game Developer";
+  }
+  55% {
+    content: "Game Develop";
+  }
+  60% {
+    content: "Game Devel";
+  }
+  65% {
+    content: "Game Deve";
+  }
+  70% {
+    content: "Game Dev";
+  }
+  75% {
+    content: "Game ";
+  }
+  80% {
+    content: "Gam";
+  }
+  85% {
+    content: "Ga";
+  }
+  90% {
+    content: "G";
+  }
+  95% {
+    content: " ";
+  }
+  100% {
+    content: "Graphic Designer";
+  }
+  105% {
+    content: "Graphic Designe";
+  }
+  110% {
+    content: "Graphic Design";
+  }
+  115% {
+    content: "Graphic Desig";
+  }
+  120% {
+    content: "Graphic Desi";
+  }
+  125% {
+    content: "Graphic Des";
+  }
+  130% {
+    content: "Graphic De";
+  }
+  135% {
+    content: "Graphic D";
+  }
+  140% {
+    content: "Graphic ";
+  }
+  145% {
+    content: "Graphi";
+  }
+  150% {
+    content: "Graph";
+  }
+  155% {
+    content: "Grap";
+  }
+  160% {
+    content: "Gra";
+  }
+  165% {
+    content: "Gr";
+  }
+  170% {
+    content: "G";
+  }
+  175% {
+    content: " ";
+  }
+}
+
 /* DESKTOP NAV */
 
 nav,
@@ -46,16 +163,16 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(5, 5, 5);
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color: rgb(9, 36, 242);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(219, 34, 34);
 }
 
 .logo {
@@ -197,7 +314,23 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  
 }
+/* .title {
+  animation: slideAnimation 1s ease forwards;
+}
+
+@keyframes slideAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
 
 #socials-container {
   display: flex;
@@ -301,6 +434,16 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  transform: translateX(400%);
+  transition: transform 0.7s ease;
+}
+.details-container:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+/* boxes with class of show are shown in the middle of X axis */
+.details-container.show {
+  transform: translateX(0);
 }
 
 .section-container {
